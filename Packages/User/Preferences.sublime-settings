@@ -1,0 +1,31 @@
+{
+	"auto_complete_commit_on_tab": true,
+	"auto_complete_with_fields": true,
+	"detect_indentation": false,
+	"file_exclude_files":
+	[
+		".log"
+	],
+	"folder_exclude_patterns":
+	[
+		".git",
+		".hg",
+		"CVS",
+		"node_modules",
+		"bower_components",
+		"vendor",
+		"dist",
+		"tmp",
+		"*.log"
+	],
+	"font_size": 10,
+	"shell_exec_output": "panel",
+	"smart_indent": true,
+	"tab_size": 2,
+	"theme": "Primer Dark.sublime-theme",
+	"color_scheme": "Packages/Theme - Primer/primer.dark.tmTheme",
+	"theme_primer_tab_active_green": true,
+	"theme_primer_tabs_small": true,
+	"translate_tabs_to_spaces": false,
+	"trim_automatic_white_space": true
+}
