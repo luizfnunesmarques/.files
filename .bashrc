@@ -2,6 +2,15 @@ alias gs="git status"
 alias gf="git fetch"
 alias gf="git fetch"
 
+function cherrypick_dirty {
+  git --git-dir=../$1/.git \
+  format-patch -k -1 --stdout $2 | \
+  git am -3 -k
+}
+
+function tbd {
+  youtube-dl -x --audio-format mp3 $1 -o "~/Music/%(title)s.%(ext)s"
+}
 
 function parse_git_branch() {
 	BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
