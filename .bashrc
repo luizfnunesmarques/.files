@@ -57,3 +57,8 @@ function parse_git_dirty {
 }
 
 export PS1="\[\e[34;40m\]\h\[\e[m\]:\[\e[32m\]\u\[\e[m\]:\[\e[32;40m\]\W\[\e[m\]:\[\e[42m\]\`parse_git_branch\`\[\e[m\]|"
+
+## list pods all nodes and ns
+function kpods {
+  kubectl get pods -o wide --sort-by="{.spec.nodeName}" --all-namespaces
+}
