@@ -9,7 +9,7 @@ function cherrypick_dirty {
 }
 
 function tbd {
-  youtube-dl -x --audio-format mp3 $1 -o "~/Music/%(title)s.%(ext)s"
+  youtube-dl -x --rm-cache-dir --user-agent "Mozilla/5.0 CK={} (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko" --audio-format mp3 $1 -o "~/Music/%(title)s.%(ext)s"
 }
 
 function parse_git_branch() {
