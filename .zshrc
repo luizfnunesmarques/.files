@@ -13,3 +13,6 @@ SPACESHIP_GIT_STATUS_PREFIX=" "
 SPACESHIP_GIT_STATUS_SUFFIX=""
 SPACESHIP_RUBY_SHOW="FALSE"
 
+alias gs="git status"
+alias gf="git fetch"
+alias gf="git fetch"
