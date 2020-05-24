@@ -16,3 +16,5 @@ SPACESHIP_RUBY_SHOW="FALSE"
 alias gs="git status"
 alias gf="git fetch"
 alias gf="git fetch"
+
+function mkdircd () { mkdir -p "$@" && eval cd "\"\$$#\""; }
