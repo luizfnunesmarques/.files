@@ -1,0 +1,7 @@
+{
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "none",
+    "workbench.sideBar.location": "right",
+    "workbench.activityBar.visible": false,
+    "explorer.openEditors.visible": 0
+}
