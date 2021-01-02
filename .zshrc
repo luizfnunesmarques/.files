@@ -13,8 +13,47 @@ SPACESHIP_GIT_STATUS_PREFIX=" "
 SPACESHIP_GIT_STATUS_SUFFIX=""
 SPACESHIP_RUBY_SHOW="FALSE"
 
+# git
+alias gcm="git checkout main"
+alias gpom="git pull origin main"
 alias gs="git status"
 alias gf="git fetch"
-alias gf="git fetch"
+alias dup="docker-compose up"
+alias ddown="docker-compose down"
+alias gaa="git add ."
+alias gcm="git commit -m"
+
+function gco() {
+  echo "-- checking $1 --"
+  git checkout $1
+}
+
+function gpush() {
+  echo "-- pushing $1 to origin remote --"
+  git push origin $1
+}
+
+function gadd() {
+  echo "-- adding files --"
+  git add $@
+}
+
+# k8
+alias k="kubectl"
+alias kpods="kubectl get pods"
+alias ksvc="kubectl get services"
+alias kdpl="kubectl get deployments"
+alias kdp="kubectl describe pods"
+alias kns="kubectl get namespaces"
+
+# docker
+alias dup="docker-compose up"
+alias ddown="docker-compose down"
+alias dlint="dlint Dockerfile"
+
+# misc
+alias gt="go test"
+alias npi="npm install"
+alias ber="bundle exec rspec"
 
 function mkdircd () { mkdir -p "$@" && eval cd "\"\$$#\""; }
