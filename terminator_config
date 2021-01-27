@@ -1,0 +1,80 @@
+[global_config]
+  window_state = maximise
+  borderless = True
+  broadcast_default = off
+  title_use_system_font = False
+[keybindings]
+  zoom_in = None
+  zoom_out = None
+  zoom_normal = None
+  new_tab = None
+  cycle_next = None
+  cycle_prev = None
+  go_next = None
+  go_prev = None
+  go_up = None
+  go_down = None
+  go_left = <Primary>comma
+  go_right = <Primary>period
+  rotate_cw = None
+  rotate_ccw = None
+  split_horiz = None
+  split_vert = <Primary><Shift>Right
+  close_term = <Primary>w
+  copy = <Control><shift>c
+  paste = <Control><shift>v
+  toggle_scrollbar = None
+  search = None
+  close_window = None
+  resize_up = None
+  resize_down = None
+  resize_left = None
+  resize_right = None
+  move_tab_right = None
+  move_tab_left = None
+  toggle_zoom = None
+  scaled_zoom = None
+  next_tab = None
+  prev_tab = None
+  switch_to_tab_1 = <Alt>1
+  switch_to_tab_2 = <Alt>2
+  full_screen = None
+  reset = None
+  reset_clear = None
+  hide_window = None
+  group_all = None
+  ungroup_all = None
+  group_tab = None
+  ungroup_tab = None
+  new_window = None
+  new_terminator = None
+  broadcast_off = <Alt>s
+  insert_number = None
+  insert_padded = None
+  edit_window_title = None
+  layout_launcher = None
+  help = None
+[profiles]
+  [[default]]
+    allow_bold = False
+    background_color = "#2e3436"
+    cursor_shape = ibeam
+    cursor_color = "#aaaaaa"
+    font = DejaVu Sans Mono 12
+    foreground_color = "#eeeeec"
+    scrollbar_position = hidden
+    scrollback_lines = 5000
+    palette = "#2e3436:#ffd818:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
+    login_shell = True
+    use_system_font = False
+  [[New Profile]]
+    cursor_color = "#aaaaaa"
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+[plugins]
