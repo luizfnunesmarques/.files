@@ -53,8 +53,8 @@
         "when": "breadcrumbsPossible"
     },
     {
-        "key": "alt+[",
-        "command": "workbench.action.terminal.focus"
+        "key": "alt+q",
+        "command": "workbench.action.terminal.toggleTerminal"
     },
     {
         "key": "alt+[",
@@ -65,11 +65,7 @@
         "command": "go.test.workspace"
     },
     {
-        "key": "ctrl+[Semicolon]",
-        "command": "workbench.action.terminal.toggleTerminal"
-    },
-    {
-        "key": "ctrl+shift+[BracketLeft]",
-        "command": "-workbench.action.terminal.toggleTerminal"
+        "key": "ctrl+o",
+        "command": "copyRelativeFilePath"
     }
 ]
