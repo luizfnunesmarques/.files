@@ -67,5 +67,18 @@
     {
         "key": "ctrl+o",
         "command": "copyRelativeFilePath"
-    }
+    },
+    {
+        "key": "ctrl+alt+n", // "cmd+n" on mac
+        "command": "extension.advancedNewFile",
+    },
+    {
+        "key": "ctrl+0",
+        "command": "revealInExplorer"
+    },
+    {
+        "key": "ctrl+\\",
+        "command": "workbench.action.editorLayoutTwoColumns"
+    },
+
 ]
