@@ -12,10 +12,8 @@
   "docker.showStartPage": false,
   "editor.accessibilitySupport": "off",
   "editor.copyWithSyntaxHighlighting": false,
-  "editor.folding": false,
   "workbench.enableExperiments": false,
   "workbench.list.automaticKeyboardNavigation": false,
-  "workbench.colorTheme": "Visual Studio Dark",
   "workbench.editor.enablePreview": false,
   "workbench.editor.focusRecentEditorAfterClose": false,
   "workbench.editor.showIcons": false,
@@ -23,13 +21,13 @@
   "window.autoDetectHighContrast": false,
   "window.customMenuBarAltFocus": false,
   "window.menuBarVisibility": "toggle",
-  "window.titleBarStyle": "custom",
   "go.coverOnTestPackage": false,
   "editor.hover.enabled": false,
   "yaml.completion": true,
   "yaml.format.enable": true,
   "yaml.schemas": {
-    "kubernetes": "*.yaml",
+
+    "kubernetes": "*.yml",
   },
   "yaml.schemaStore.enable": true,
   "files.trimTrailingWhitespace": true,
@@ -47,9 +45,6 @@
   "go.lintOnSave": "off",
   "go.lintTool": "golint",
   "diffEditor.ignoreTrimWhitespace": false,
-  "files.associations": {
-    "*.yml": "yaml"
-  },
   "scm.countBadge": "off",
   "outline.problems.badges": false,
   "git.countBadge": "off",
@@ -68,5 +63,28 @@
   "git.confirmSync": false,
   "explorer.autoReveal": false,
   "files.trimFinalNewlines": true,
-  "search.mode": "reuseEditor"
+  "search.mode": "newEditor",
+  "editor.scrollbar.horizontal": "hidden",
+"editor.scrollbar.vertical": "hidden",
+"editor.scrollbar.verticalScrollbarSize": 0,
+"workbench.editor.wrapTabs": true,
+"timeline.excludeSources": [
+  "git-history"
+],
+"editor.links": false,
+"github.gitAuthentication": false,
+"git.confirmEmptyCommits": false,
+"explorer.compactFolders": false,
+"window.titleBarStyle": "custom",
+"git.enabled": false,
+"workbench.colorTheme": "Material Theme Darker",
+"editor.find.seedSearchStringFromSelection": false,
+"workbench.settings.settingsSearchTocBehavior": "hide",
+"search.followSymlinks": false,
+"search.collapseResults": "alwaysCollapse",
+"files.associations": {
+  ".yml": "yaml",
+  "*.yaml": "yaml"
+},
+"window.newWindowDimensions": "maximized",
 }
