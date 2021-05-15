@@ -3,7 +3,7 @@
   "editor.renderWhitespace": "trailing",
   "workbench.sideBar.location": "right",
   "explorer.openEditors.visible": 0,
-  "workbench.startupEditor": "newUntitledFile",
+  "workbench.startupEditor": "none",
   "update.mode": "none",
   "update.showReleaseNotes": false,
   "markdown.preview.scrollEditorWithPreview": false,
@@ -22,12 +22,14 @@
   "window.customMenuBarAltFocus": false,
   "window.menuBarVisibility": "toggle",
   "go.coverOnTestPackage": false,
-  "editor.hover.enabled": false,
+  "yaml.validate": true,
+  "yaml.hover": true,
   "yaml.completion": true,
   "yaml.format.enable": true,
   "yaml.schemas": {
-
-    "kubernetes": "*.yml",
+    "http://json.schemastore.org/github-workflow": ".github/*.yml",
+    "https://json.schemastore.org/kustomization.json": ".kubernetes/*/kustomization.template.yml",
+    "kubernetes": ".kubernetes/*/*.yml"
   },
   "yaml.schemaStore.enable": true,
   "files.trimTrailingWhitespace": true,
@@ -65,26 +67,31 @@
   "files.trimFinalNewlines": true,
   "search.mode": "newEditor",
   "editor.scrollbar.horizontal": "hidden",
-"editor.scrollbar.vertical": "hidden",
-"editor.scrollbar.verticalScrollbarSize": 0,
-"workbench.editor.wrapTabs": true,
-"timeline.excludeSources": [
-  "git-history"
-],
-"editor.links": false,
-"github.gitAuthentication": false,
-"git.confirmEmptyCommits": false,
-"explorer.compactFolders": false,
-"window.titleBarStyle": "custom",
-"git.enabled": false,
-"workbench.colorTheme": "Material Theme Darker",
-"editor.find.seedSearchStringFromSelection": false,
-"workbench.settings.settingsSearchTocBehavior": "hide",
-"search.followSymlinks": false,
-"search.collapseResults": "alwaysCollapse",
-"files.associations": {
-  ".yml": "yaml",
-  "*.yaml": "yaml"
-},
-"window.newWindowDimensions": "maximized",
+  "editor.scrollbar.verticalScrollbarSize": 0,
+  "workbench.editor.wrapTabs": true,
+  "timeline.excludeSources": [
+    "git-history"
+  ],
+  "editor.links": false,
+  "github.gitAuthentication": false,
+  "git.confirmEmptyCommits": false,
+  "explorer.compactFolders": false,
+  "window.titleBarStyle": "custom",
+  "git.enabled": false,
+  "workbench.colorTheme": "Monokai Dimmed",
+  "editor.find.seedSearchStringFromSelection": false,
+  "workbench.settings.settingsSearchTocBehavior": "hide",
+  "search.followSymlinks": false,
+  "search.collapseResults": "alwaysCollapse",
+  "files.associations": {
+    ".yml": "yaml",
+    "*.yaml": "yaml"
+  },
+  "window.newWindowDimensions": "maximized",
+  "diffEditor.codeLens": true,
+  "editor.hover.delay": 100,
+  "editor.quickSuggestions": true,
+  "explorer.confirmDelete": false,
+  "search.quickOpen.includeSymbols": true,
+  "workbench.editor.closeEmptyGroups": false
 }
