@@ -69,7 +69,7 @@
         "command": "copyRelativeFilePath"
     },
     {
-        "key": "ctrl+alt+n", // "cmd+n" on mac
+        "key": "ctrl+alt+n",
         "command": "extension.advancedNewFile",
     },
     {
