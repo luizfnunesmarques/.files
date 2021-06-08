@@ -1,7 +1,8 @@
 {
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "trailing",
-  "workbench.sideBar.location": "right",
+  "workbench.sideBar.location": "left",
+  "workbench.statusBar.visible": true,
   "explorer.openEditors.visible": 0,
   "workbench.startupEditor": "none",
   "update.mode": "none",
@@ -14,7 +15,6 @@
   "editor.copyWithSyntaxHighlighting": false,
   "workbench.enableExperiments": false,
   "workbench.list.automaticKeyboardNavigation": false,
-  "workbench.editor.enablePreview": false,
   "workbench.editor.focusRecentEditorAfterClose": false,
   "workbench.editor.showIcons": false,
   "workbench.settings.enableNaturalLanguageSearch": false,
@@ -29,7 +29,7 @@
   "yaml.schemas": {
     "http://json.schemastore.org/github-workflow": ".github/*.yml",
     "https://json.schemastore.org/kustomization.json": ".kubernetes/*/kustomization.template.yml",
-    "kubernetes": ".kubernetes/*/*.yml"
+    "kubernetes": ".kubernetes/*.yml"
   },
   "yaml.schemaStore.enable": true,
   "files.trimTrailingWhitespace": true,
@@ -75,16 +75,15 @@
   "editor.links": false,
   "github.gitAuthentication": false,
   "git.confirmEmptyCommits": false,
-  "explorer.compactFolders": false,
   "window.titleBarStyle": "custom",
   "git.enabled": false,
-  "workbench.colorTheme": "Monokai Dimmed",
+  "workbench.colorTheme": "Primer (dark)",
   "editor.find.seedSearchStringFromSelection": false,
   "workbench.settings.settingsSearchTocBehavior": "hide",
   "search.followSymlinks": false,
   "search.collapseResults": "alwaysCollapse",
   "files.associations": {
-    ".yml": "yaml",
+    "*.yml": "yaml",
     "*.yaml": "yaml"
   },
   "window.newWindowDimensions": "maximized",
@@ -93,5 +92,28 @@
   "editor.quickSuggestions": true,
   "explorer.confirmDelete": false,
   "search.quickOpen.includeSymbols": true,
-  "workbench.editor.closeEmptyGroups": false
+  "workbench.editor.closeEmptyGroups": false,
+  "editor.acceptSuggestionOnEnter": "off",
+  "notebook.cellToolbarLocation": "left",
+  "workbench.colorCustomizations": {
+    "[Primer (dark)]": {
+      "statusBar.background": "#22252B",
+      "statusBar.foreground": "#c9c8c8d0",
+      "editorIndentGuide.activeBackground": "#ffffff36",
+      "editorIndentGuide.background": "#36404e",
+      "sideBar.background": "#22252B",
+      "sideBar.foreground": "#c9c8c8d0",
+      "editorLineNumber.foreground": "#c9c8c8d0",
+      "editorLink.activeForeground": "#36404e",
+      "tab.activeBackground": "#22252B",
+      "tab.activeForeground": "#c9c8c8d0",
+      "sideBarTitle.foreground": "#22252B",
+      "panel.border": "#22252B",
+      "sideBar.border": "#22252B",
+      "titleBar.activeBackground": "#22252B",
+      "titleBar.activeForeground": "#c9c8c8d0",
+      "scrollbar.shadow": none,
+      "titleBar.inactiveForeground": "#ff0000"
+    },
+  }
 }
