@@ -1,0 +1,15 @@
+.tabs-and-actions-container .editor-actions {
+    display: none !important;
+}
+
+.window-appicon {
+	display: none; !important
+}
+
+.tabs-and-actions-container .editor-actions {
+    display: none !important;
+}
+
+.vs-dark .monaco-workbench>.part.editor>.content>.one-editor-silo>.container>.title.tabs:before {
+  border: 0px !important;
+}
