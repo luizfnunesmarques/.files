@@ -29,7 +29,7 @@
   "yaml.schemas": {
     "http://json.schemastore.org/github-workflow": ".github/*.yml",
     "https://json.schemastore.org/kustomization.json": ".kubernetes/*/kustomization.template.yml",
-    "kubernetes": ".kubernetes/*.yml"
+    "kubernetes": [".kubernetes/*.yml", "staging/*.yml"]
   },
   "yaml.schemaStore.enable": true,
   "files.trimTrailingWhitespace": true,
@@ -95,6 +95,7 @@
   "workbench.editor.closeEmptyGroups": false,
   "editor.acceptSuggestionOnEnter": "off",
   "notebook.cellToolbarLocation": "left",
+
   "workbench.colorCustomizations": {
     "[Primer (dark)]": {
       "statusBar.background": "#22252B",
@@ -103,17 +104,29 @@
       "editorIndentGuide.background": "#36404e",
       "sideBar.background": "#22252B",
       "sideBar.foreground": "#c9c8c8d0",
-      "editorLineNumber.foreground": "#c9c8c8d0",
+      "editorLineNumber.foreground": "#c9c8c86e",
       "editorLink.activeForeground": "#36404e",
-      "tab.activeBackground": "#22252B",
-      "tab.activeForeground": "#c9c8c8d0",
+      "tab.activeBackground": "#88b379",
+      "tab.activeForeground": "#cef5dd",
       "sideBarTitle.foreground": "#22252B",
       "panel.border": "#22252B",
       "sideBar.border": "#22252B",
-      "titleBar.activeBackground": "#22252B",
-      "titleBar.activeForeground": "#c9c8c8d0",
-      "scrollbar.shadow": none,
-      "titleBar.inactiveForeground": "#ff0000"
+      "titleBar.activeBackground": "#f6f5f4",
+      "titleBar.activeForeground": "#22252B",
+      "scrollbar.shadow": "#c9c8c8d0",
+      "titleBar.inactiveForeground": "#FFFFFF",
+      "terminal.background": "#1f1f1f",
+      "scrollbarSlider.background": "#141619",
     },
-  }
+  },
+  "vscode_custom_css.statusbar": false,
+
+  "vscode_custom_css.imports": [
+    "file:///home/${whoami}/.config/Code/User/layout.css"
+  ],
+  "editor.wordBasedSuggestions": false,
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.formatOnSave": true
+}
 }
