@@ -1,0 +1,122 @@
+[
+    {
+        "key": "alt+,",
+        "command": "workbench.action.previousPanelView"
+    },
+    {
+        "key": "alt+,",
+        "command": "columnSelect"
+    },
+    {
+        "key": "cmd+,",
+        "command": "workbench.action.focusLeftGroup"
+    },
+    {
+        "key": "ctrl+k ctrl+left",
+        "command": "-workbench.action.focusLeftGroup"
+    },
+    {
+        "key": "cmd+.",
+        "command": "workbench.action.focusRightGroup"
+    },
+    {
+        "key": "ctrl+k ctrl+right",
+        "command": "-workbench.action.focusRightGroup"
+    },
+    {
+        "key": "ctrl+,",
+        "command": "-workbench.action.openSettings"
+    },
+    {
+        "key": "ctrl+shift+,",
+        "command": "-editor.action.inPlaceReplace.up",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+.",
+        "command": "-editor.action.quickFix",
+        "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+.",
+        "command": "-problems.action.showQuickFixes",
+        "when": "problemFocus"
+    },
+    {
+        "key": "ctrl+.",
+        "command": "-settings.action.editFocusedSetting",
+        "when": "inSettingsSearch"
+    },
+    {
+        "key": "ctrl+shift+.",
+        "command": "-breadcrumbs.focusAndSelect",
+        "when": "breadcrumbsPossible"
+    },
+    {
+        "key": "cmd+l",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "alt+[",
+        "command": "go.test.file"
+    },
+    {
+        "key": "alt+]",
+        "command": "go.test.workspace"
+    },
+    {
+        "key": "ctrl+o",
+        "command": "copyRelativeFilePath"
+    },
+    {
+        "key": "ctrl+alt+n",
+        "command": "extension.advancedNewFile",
+    },
+    {
+        "key": "ctrl+0",
+        "command": "revealInExplorer"
+    },
+    {
+        "key": "ctrl+\\",
+        "command": "workbench.action.editorLayoutTwoColumns"
+    },
+    {
+        "key": "cmd+space",
+        "command": "editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+space",
+        "command": "-editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+left",
+        "command": "cursorHome",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+right",
+        "command": "cursorEnd",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "cmd+right",
+        "command": "-cursorEnd",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "cmd+left",
+        "command": "cursorWordLeft",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+left",
+        "command": "-cursorWordLeft",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "cmd+right",
+        "command": "cursorWordRight"
+    },
+]
