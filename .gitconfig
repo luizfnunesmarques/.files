@@ -1,0 +1,19 @@
+# signing commits sbs
+# git config --global gpg.ssh.allowedSignersFile ~/.ssh/allowed_signers
+# touch ~/.ssh/allowed_signers
+# echo "email type key" ~/.ssh/allowed_signers
+
+[user]
+	name = Luiz Marques
+	email = luizfnunesmarques@gmail.com
+	signingKey = <>
+[commit]
+	gpgsign = true
+[tag]
+	gpgsign = true
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	allowedSignersFile = <>
+[core]
+	editor = vim
