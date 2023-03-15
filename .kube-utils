@@ -1,0 +1,16 @@
+function nuke-ns {
+  kubectl delete "$(kubectl api-resources --namespaced=true --verbs=delete -o name | tr "\n" "," | sed -e 's/,$//')" $1
+  echo "Objects erased. Deleting s"
+  kubectl delete ns $1
+  echo "Success. NS Deleted"
+}
+
+export dr="--dry-run -o yaml"
+
+alias k="kubectl"
+alias kpods="kubectl get pods"
+alias ksvc="kubectl get services"
+alias kdpl="kubectl get deployments"
+alias kdp="kubectl describe pods"
+alias kns="kubectl get namespaces"
+alias kctx="kubectl config current-context"
