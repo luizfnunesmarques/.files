@@ -1,0 +1,30 @@
+function gco {
+  echo "-- checking $1 --"
+  git checkout $1
+  echo "-- done --"
+}
+
+function gpush() {
+  echo "-- pushing $1 to origin remote --"
+  git push origin $1
+  echo "-- done --"
+}
+
+function gadd() {
+  echo "-- adding files --"
+  git add $@
+  echo "-- done --"
+}
+
+function gpo {
+  echo "-- pulling $1 --"
+  git pull origin $1
+  echo "-- done --"
+}
+
+alias gcm="git checkout main"
+alias gpom="git pull origin main"
+alias gs="git status"
+alias gf="git fetch"
+alias gaa="git add ."
+alias gcm="git commit -m"
